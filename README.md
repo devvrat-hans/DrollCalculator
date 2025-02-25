@@ -1,6 +1,6 @@
 # DrollCalc - Your Ultimate Calculator 
 
-DrollCalc is a powerful, user-friendly web platform that aims offers over 100 specialized calculators across various categories, including Mathematics, Physics, Finance, and more. Whether you're a student, professional, or just someone in need of quick calculations, DrollCalc has you covered with a wide range of tools to make your life easier.
+DrollCalc is a powerful, user-friendly web platform that aims to offer over 100 specialized calculators across various categories, including Mathematics, Physics, Finance, and more. Whether you're a student, professional, or just someone in need of quick calculations, DrollCalc has you covered with a wide range of tools to make your life easier.
 
 ## Features
 
