@@ -1,0 +1,149 @@
+calculator.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Force Calculator. Calculate force using mass and acceleration, spring force, gravitational force and more. Perfect for physics calculations.">
+    <meta name="keywords" content="force calculator, physics calculator, newton force calculator, spring force calculator, gravitational force calculator">
+    <title>Force Calculator - Physics Made Easy | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="force-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Force Calculator</h1>
+            <p class="calculator-description">Calculate different types of forces using various physical parameters.</p>
+
+            <div class="force-type-selector">
+                <select id="forceType" class="force-select">
+                    <option value="newton">Newton's Force (F = ma)</option>
+                    <option value="spring">Spring Force (F = kx)</option>
+                    <option value="gravity">Gravitational Force (F = GMm/r²)</option>
+                    <option value="friction">Friction Force (F = μN)</option>
+                </select>
+            </div>
+
+            <div class="input-group" id="newtonForce">
+                <div class="amount-input">
+                    <label>Mass (kg)</label>
+                    <input type="number" id="mass" placeholder="Enter mass">
+                </div>
+                <div class="amount-input">
+                    <label>Acceleration (m/s²)</label>
+                    <input type="number" id="acceleration" placeholder="Enter acceleration">
+                </div>
+            </div>
+
+            <div class="input-group" id="springForce" style="display: none;">
+                <div class="amount-input">
+                    <label>Spring Constant (N/m)</label>
+                    <input type="number" id="springConstant" placeholder="Enter spring constant">
+                </div>
+                <div class="amount-input">
+                    <label>Displacement (m)</label>
+                    <input type="number" id="displacement" placeholder="Enter displacement">
+                </div>
+            </div>
+
+            <div class="input-group" id="gravityForce" style="display: none;">
+                <div class="amount-input">
+                    <label>Mass 1 (kg)</label>
+                    <input type="number" id="mass1" placeholder="Enter first mass">
+                </div>
+                <div class="amount-input">
+                    <label>Mass 2 (kg)</label>
+                    <input type="number" id="mass2" placeholder="Enter second mass">
+                </div>
+                <div class="amount-input">
+                    <label>Distance (m)</label>
+                    <input type="number" id="distance" placeholder="Enter distance">
+                </div>
+            </div>
+
+            <div class="input-group" id="frictionForce" style="display: none;">
+                <div class="amount-input">
+                    <label>Coefficient of Friction (μ)</label>
+                    <input type="number" id="coefficient" placeholder="Enter coefficient">
+                </div>
+                <div class="amount-input">
+                    <label>Normal Force (N)</label>
+                    <input type="number" id="normalForce" placeholder="Enter normal force">
+                </div>
+            </div>
+
+            <button id="calculateForce" class="calculate-btn">
+                <span>Calculate Force</span>
+            </button>
+
+            <div class="result-container">
+                <div class="result-box">
+                    <span class="result-number" id="forceResult">0 N</span>
+                    <span class="result-label">Force</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Physics Force Calculator</h2>
+                <p>Our Force Calculator helps you compute various types of forces in physics. Whether you're studying Newton's laws, spring forces, or gravitational interactions, this tool provides accurate calculations for all your physics needs.</p>
+                
+                <h3>Available Calculations</h3>
+                <ul>
+                    <li>Newton's Second Law (F = ma)</li>
+                    <li>Spring Force - Hooke's Law (F = kx)</li>
+                    <li>Gravitational Force (F = GMm/r²)</li>
+                    <li>Friction Force (F = μN)</li>
+                </ul>
+
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Physics Education</h4>
+                        <p>Perfect for students learning mechanics and force calculations.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Engineering</h4>
+                        <p>Useful for basic engineering force calculations.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Scientific Research</h4>
+                        <p>Quick force calculations for research applications.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>What is Newton's Second Law?</h4>
+                        <p>Newton's Second Law states that force equals mass times acceleration (F = ma), describing the relationship between an object's mass, acceleration, and the force acting upon it.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What is Hooke's Law?</h4>
+                        <p>Hooke's Law states that the force needed to extend or compress a spring is directly proportional to the distance of extension or compression (F = kx).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How accurate are the calculations?</h4>
+                        <p>Our calculator provides results with high precision, suitable for both educational and professional use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+    
+    <script src="../Force_Calculator/force-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+</body>
+</html>

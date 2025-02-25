@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Matrix Calculator. Perform matrix operations like addition, multiplication, determinant, and inverse. Best tool for linear algebra calculations.">
+    <meta name="keywords" content="matrix calculator, determinant calculator, inverse matrix, matrix multiplication, linear algebra calculator">
+    <title>Matrix Calculator - Linear Algebra Operations | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../Matrix_Calculator/matrix-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Matrix Calculator</h1>
+            <p class="calculator-description">Perform various matrix operations with ease.</p>
+            
+            <div class="matrix-controls">
+                <div class="dimension-controls">
+                    <div class="amount-input">
+                        <label>Matrix A Dimensions</label>
+                        <div class="dimension-inputs">
+                            <input type="number" id="matrixARows" min="1" max="5" value="2">
+                            <span>×</span>
+                            <input type="number" id="matrixACols" min="1" max="5" value="2">
+                        </div>
+                    </div>
+                    <div class="amount-input">
+                        <label>Matrix B Dimensions</label>
+                        <div class="dimension-inputs">
+                            <input type="number" id="matrixBRows" min="1" max="5" value="2">
+                            <span>×</span>
+                            <input type="number" id="matrixBCols" min="1" max="5" value="2">
+                        </div>
+                    </div>
+                </div>
+
+                <select id="operation" class="operation-select">
+                    <option value="add">Addition (A + B)</option>
+                    <option value="subtract">Subtraction (A - B)</option>
+                    <option value="multiply">Multiplication (A × B)</option>
+                    <option value="determinant">Determinant</option>
+                    <option value="inverse">Inverse</option>
+                </select>
+            </div>
+
+            <div class="matrices-container">
+                <div class="matrix-input-group">
+                    <h3>Matrix A</h3>
+                    <div id="matrixA" class="matrix-grid"></div>
+                </div>
+                
+                <div class="matrix-input-group">
+                    <h3>Matrix B</h3>
+                    <div id="matrixB" class="matrix-grid"></div>
+                </div>
+            </div>
+
+            <button id="calculateMatrix" class="calculate-btn">
+                <span>Calculate</span>
+            </button>
+            
+            <div class="result-container">
+                <h3>Result</h3>
+                <div id="matrixResult" class="matrix-result"></div>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Matrix Operations Made Easy</h2>
+                <p>Our Matrix Calculator simplifies complex linear algebra calculations. Whether you're a student, teacher, or professional, this tool helps you perform matrix operations quickly and accurately.</p>
+                
+                <h3>Available Operations</h3>
+                <ul>
+                    <li>Matrix Addition and Subtraction</li>
+                    <li>Matrix Multiplication</li>
+                    <li>Determinant Calculation</li>
+                    <li>Matrix Inverse</li>
+                    <li>Support for up to 5×5 matrices</li>
+                </ul>
+                
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Linear Algebra</h4>
+                        <p>Solve systems of linear equations and transformations.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Engineering</h4>
+                        <p>Perform structural analysis and circuit calculations.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Mathematics</h4>
+                        <p>Learn and verify matrix operations and properties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+
+    <script src="../Matrix_Calculator/matrix-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+</body>
+</html>

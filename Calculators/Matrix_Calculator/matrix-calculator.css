@@ -1,0 +1,345 @@
+/* Main Container */
+.calculator-container {
+    min-height: 100vh;
+    padding: 100px 2rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+/* Calculator Header */
+.calculator-card h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.calculator-description {
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Matrix Controls */
+.matrix-controls {
+    margin-bottom: 2rem;
+}
+
+.dimension-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.dimension-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dimension-inputs input {
+    width: 60px;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.dimension-inputs span {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Operation Selector */
+.operation-select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.operation-select:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Matrix Grid */
+.matrices-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.matrix-input-group h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.matrix-grid {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.matrix-row {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+}
+
+.matrix-cell {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.matrix-cell:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Calculate Button */
+.calculate-btn {
+    width: 100%;
+    padding: 1.2rem;
+    background: linear-gradient(135deg, #333 0%, #222 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-bottom: 2rem;
+}
+
+.calculate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Result Section */
+.result-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.result-container h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.matrix-result {
+    background: rgba(51, 51, 51, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+/* SEO Content */
+.seo-content {
+    max-width: 80vw;
+    width: 100%;
+    padding: 0 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -1rem;
+}
+
+.content-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+}
+
+.content-section p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.content-section ul {
+    list-style-type: none;
+    margin: 1rem 0;
+}
+
+.content-section ul li {
+    color: #666;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.content-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #333;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
+}
+
+.use-case {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    padding: 2rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.use-case:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.use-case h4 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.use-case h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #333, transparent);
+}
+
+.use-case p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Error Message */
+.error-message {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator-container {
+        padding: 80px 1rem 1rem;
+    }
+
+    .calculator-card {
+        padding: 1.5rem;
+    }
+
+    .calculator-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .matrices-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .content-section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator-card {
+        padding: 1.2rem;
+    }
+
+    .dimension-inputs input {
+        width: 50px;
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .calculate-btn {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .matrix-cell {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .use-case {
+        padding: 1.2rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-result {
+    animation: fadeIn 0.5s ease-out forwards;
+}

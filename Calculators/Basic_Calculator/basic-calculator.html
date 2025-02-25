@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Basic Calculator. Simple arithmetic operations with memory functions. Best tool for quick calculations.">
+    <meta name="keywords" content="basic calculator, simple calculator, arithmetic calculator, online calculator, math calculator">
+    <title>Basic Calculator - Simple Arithmetic | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="basic-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Basic Calculator</h1>
+            <div class="calc-display">
+                <div class="calc-history" id="history"></div>
+                <div class="calc-input" id="input">0</div>
+            </div>
+            
+            <div class="calc-grid">
+                <button class="calc-btn memory" data-action="mc">MC</button>
+                <button class="calc-btn memory" data-action="mr">MR</button>
+                <button class="calc-btn memory" data-action="m-plus">M+</button>
+                <button class="calc-btn memory" data-action="m-minus">M-</button>
+                
+                <button class="calc-btn function" data-action="clear">C</button>
+                <button class="calc-btn function" data-action="all-clear">AC</button>
+                <button class="calc-btn function" data-action="delete">⌫</button>
+                <button class="calc-btn operator" data-action="divide">÷</button>
+                
+                <button class="calc-btn number">7</button>
+                <button class="calc-btn number">8</button>
+                <button class="calc-btn number">9</button>
+                <button class="calc-btn operator" data-action="multiply">×</button>
+                
+                <button class="calc-btn number">4</button>
+                <button class="calc-btn number">5</button>
+                <button class="calc-btn number">6</button>
+                <button class="calc-btn operator" data-action="subtract">−</button>
+                
+                <button class="calc-btn number">1</button>
+                <button class="calc-btn number">2</button>
+                <button class="calc-btn number">3</button>
+                <button class="calc-btn operator" data-action="add">+</button>
+                
+                <button class="calc-btn number zero">0</button>
+                <button class="calc-btn number">.</button>
+                <button class="calc-btn equals" data-action="calculate">=</button>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Simple Arithmetic Made Easy</h2>
+                <p>Our Basic Calculator provides easy-to-use functionality for everyday calculations. Perfect for quick arithmetic operations with memory functions.</p>
+                
+                <h3>Features</h3>
+                <ul>
+                    <li>Basic Arithmetic Operations (+, -, ×, ÷)</li>
+                    <li>Memory Functions (MC, MR, M+, M-)</li>
+                    <li>Clear and Delete Options</li>
+                    <li>Keyboard Support</li>
+                </ul>
+                
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Daily Calculations</h4>
+                        <p>Perfect for quick everyday arithmetic calculations.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Shopping</h4>
+                        <p>Calculate prices, discounts, and totals easily.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Education</h4>
+                        <p>Help students learn basic arithmetic operations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>How do memory functions work?</h4>
+                        <p>MC clears memory, MR recalls stored number, M+ adds current number to memory, M- subtracts current number from memory.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Can I use keyboard?</h4>
+                        <p>Yes, you can use number keys, operators (+, -, *, /), Enter for equals, and Escape for clear.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+    
+    <script src="../Basic_Calculator/basic-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+    
+</body>
+</html>

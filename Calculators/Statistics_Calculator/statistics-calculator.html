@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Statistics Calculator. Calculate mean, median, mode, standard deviation, and more. Best tool for data analysis and statistical calculations.">
+    <meta name="keywords" content="statistics calculator, mean calculator, standard deviation calculator, data analysis calculator, variance calculator">
+    <title>Statistics Calculator - Data Analysis Tools | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../Statistics_Calculator/statistics-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Statistics Calculator</h1>
+            <p class="calculator-description">Calculate various statistical measures from your data set.</p>
+            
+            <div class="input-group">
+                <div class="data-input">
+                    <label>Enter Numbers (comma separated)</label>
+                    <textarea id="dataInput" placeholder="e.g., 1, 2, 3, 4, 5" rows="4"></textarea>
+                    <small>Or paste data from Excel/Spreadsheet</small>
+                </div>
+
+                <div class="operations-select">
+                    <label>Select Operations</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" value="mean" checked> Mean</label>
+                        <label><input type="checkbox" value="median" checked> Median</label>
+                        <label><input type="checkbox" value="mode" checked> Mode</label>
+                        <label><input type="checkbox" value="stdDev" checked> Standard Deviation</label>
+                        <label><input type="checkbox" value="variance" checked> Variance</label>
+                        <label><input type="checkbox" value="range" checked> Range</label>
+                        <label><input type="checkbox" value="quartiles" checked> Quartiles</label>
+                    </div>
+                </div>
+            </div>
+
+            <button id="calculateStats" class="calculate-btn">
+                <span>Calculate Statistics</span>
+            </button>
+            
+            <div class="stats-result-container">
+                <!-- Results will be dynamically added here -->
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Statistical Analysis Made Easy</h2>
+                <p>Our Statistics Calculator provides comprehensive statistical analysis tools for your data. Whether you're a student, researcher, or professional, this calculator helps you analyze data quickly and accurately.</p>
+                
+                <h3>Available Calculations</h3>
+                <ul>
+                    <li>Mean (Arithmetic Average)</li>
+                    <li>Median (Middle Value)</li>
+                    <li>Mode (Most Frequent Value)</li>
+                    <li>Standard Deviation</li>
+                    <li>Variance</li>
+                    <li>Range and Quartiles</li>
+                    <li>Data Distribution Analysis</li>
+                </ul>
+                
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Data Analysis</h4>
+                        <p>Analyze datasets and understand their distribution.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Research</h4>
+                        <p>Calculate statistical measures for research papers.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Education</h4>
+                        <p>Learn and verify statistical concepts.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>What is Standard Deviation?</h4>
+                        <p>Standard deviation measures the dispersion of data points from their mean value, indicating how spread out the numbers are.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How to interpret Quartiles?</h4>
+                        <p>Quartiles divide data into four equal parts. Q1 (25th percentile), Q2 (median), and Q3 (75th percentile) help understand data distribution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+
+    <script src="../Statistics_Calculator/statistics-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+</body>
+</html>

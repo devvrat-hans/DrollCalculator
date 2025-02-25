@@ -1,0 +1,401 @@
+/* Calculator Layout */
+.calculator-container {
+    min-height: 100vh;
+    padding: 100px 2rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+/* Display Section */
+.calc-display {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    text-align: right;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.calc-history {
+    font-size: 0.9rem;
+    color: #666;
+    min-height: 1.2em;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.calc-input {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+    overflow-x: auto;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+/* Mode Toggle */
+.mode-toggle {
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.mode-btn {
+    padding: 0.5rem 1rem;
+    background: rgba(51, 51, 51, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mode-btn:hover {
+    background: #333;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Calculator Grid */
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+}
+
+/* Button Styles */
+.calc-btn {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+.calc-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.calc-btn:active {
+    transform: translateY(0);
+}
+
+/* Scientific Function Buttons */
+.calc-btn.function {
+    background: rgba(51, 51, 51, 0.03);
+    color: #444;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.calc-btn.function:hover {
+    background: rgba(51, 51, 51, 0.08);
+}
+
+/* Constants Buttons */
+.calc-btn.constant {
+    background: rgba(0, 123, 255, 0.05);
+    color: #0056b3;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.calc-btn.constant:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+/* Memory Buttons */
+.calc-btn.memory {
+    background: rgba(51, 51, 51, 0.05);
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Operator Buttons */
+.calc-btn.operator {
+    background: rgba(51, 51, 51, 0.05);
+    font-weight: 600;
+    color: #444;
+}
+
+/* Equals Button */
+.calc-btn.equals {
+    background: #333;
+    color: white;
+}
+
+.calc-btn.equals:hover {
+    background: #444;
+}
+
+/* Zero Button */
+.calc-btn.zero {
+    grid-column: span 2;
+}
+
+/* Inverse Trig Functions */
+.calc-btn[data-action^="a"] {
+    font-size: 0.85rem;
+}
+
+/* Superscript Styling */
+.calc-btn[data-action="square"]::after {
+    content: "2";
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+.calc-btn[data-action="cube"]::after {
+    content: "3";
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+/* Keyboard Shortcuts Section */
+.keyboard-shortcuts {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.keyboard-shortcuts h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.keyboard-shortcuts ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+    list-style-type: none;
+}
+
+.keyboard-shortcuts li {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    list-style-type: none;
+}
+
+/* Error State */
+.error-message {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator-card {
+        padding: 1.5rem;
+    }
+
+    .calc-grid {
+        gap: 0.4rem;
+    }
+
+    .calc-btn {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .calc-btn.function {
+        font-size: 0.85rem;
+    }
+
+    .calc-btn.constant {
+        font-size: 1.1rem;
+    }
+
+    .calc-input {
+        font-size: 2rem;
+    }
+
+    .keyboard-shortcuts ul {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator-card {
+        padding: 1.2rem;
+    }
+
+    .calc-btn {
+        padding: 0.7rem;
+        font-size: 0.85rem;
+    }
+
+    .mode-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .calc-input {
+        font-size: 1.8rem;
+    }
+
+    .keyboard-shortcuts {
+        padding: 1rem;
+    }
+
+    .keyboard-shortcuts h3 {
+        font-size: 1.1rem;
+    }
+
+    .keyboard-shortcuts li {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-result {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* SEO Content */
+.seo-content {
+    max-width: 80vw;
+    width: 100%;
+    padding: 0 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -1rem;
+}
+
+.content-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+}
+
+.content-section p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.content-section ul {
+    list-style-type: none;
+    margin: 1rem 0;
+}
+
+.content-section ul li {
+    color: #666;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.content-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #333;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
+}
+
+.use-case {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    padding: 2rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.use-case:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.use-case h4 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.use-case h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #333, transparent);
+}
+
+.use-case p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}

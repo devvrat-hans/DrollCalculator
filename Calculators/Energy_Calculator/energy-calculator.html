@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Energy Calculator. Calculate kinetic energy, potential energy, thermal energy and more. Perfect for physics calculations and engineering.">
+    <meta name="keywords" content="energy calculator, physics calculator, kinetic energy, potential energy, thermal energy">
+    <title>Energy Calculator - Physics Made Easy | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="energy-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Energy Calculator</h1>
+            <p class="calculator-description">Calculate different types of energy in physics with precision.</p>
+
+            <div class="energy-type-selector">
+                <select id="energyType" class="energy-select">
+                    <option value="kinetic">Kinetic Energy (KE = ½mv²)</option>
+                    <option value="potential">Gravitational Potential Energy (PE = mgh)</option>
+                    <option value="elastic">Elastic Potential Energy (PE = ½kx²)</option>
+                    <option value="thermal">Thermal Energy (Q = mcΔT)</option>
+                </select>
+            </div>
+
+            <div class="input-group" id="kineticEnergy">
+                <div class="amount-input">
+                    <label>Mass (kg)</label>
+                    <input type="number" id="mass" placeholder="Enter mass">
+                </div>
+                <div class="amount-input">
+                    <label>Velocity (m/s)</label>
+                    <input type="number" id="velocity" placeholder="Enter velocity">
+                </div>
+            </div>
+
+            <div class="input-group" id="potentialEnergy" style="display: none;">
+                <div class="amount-input">
+                    <label>Mass (kg)</label>
+                    <input type="number" id="potMass" placeholder="Enter mass">
+                </div>
+                <div class="amount-input">
+                    <label>Height (m)</label>
+                    <input type="number" id="height" placeholder="Enter height">
+                </div>
+                <div class="amount-input">
+                    <label>Gravitational Acceleration (m/s²)</label>
+                    <input type="number" id="gravity" value="9.81" placeholder="Enter g">
+                </div>
+            </div>
+
+            <div class="input-group" id="elasticEnergy" style="display: none;">
+                <div class="amount-input">
+                    <label>Spring Constant (N/m)</label>
+                    <input type="number" id="springConstant" placeholder="Enter spring constant">
+                </div>
+                <div class="amount-input">
+                    <label>Displacement (m)</label>
+                    <input type="number" id="displacement" placeholder="Enter displacement">
+                </div>
+            </div>
+
+            <div class="input-group" id="thermalEnergy" style="display: none;">
+                <div class="amount-input">
+                    <label>Mass (kg)</label>
+                    <input type="number" id="thermalMass" placeholder="Enter mass">
+                </div>
+                <div class="amount-input">
+                    <label>Specific Heat Capacity (J/kg·K)</label>
+                    <input type="number" id="specificHeat" placeholder="Enter specific heat">
+                </div>
+                <div class="amount-input">
+                    <label>Temperature Change (K)</label>
+                    <input type="number" id="tempChange" placeholder="Enter temperature change">
+                </div>
+            </div>
+
+            <button id="calculateEnergy" class="calculate-btn">
+                <span>Calculate Energy</span>
+            </button>
+
+            <div class="result-container">
+                <div class="result-box">
+                    <span class="result-number" id="energyResult">0 J</span>
+                    <span class="result-label">Energy</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Physics Energy Calculator</h2>
+                <p>Our Energy Calculator helps you compute various forms of energy in physics. Whether you're studying mechanics, thermodynamics, or other energy-related concepts, this tool provides accurate calculations for your physics problems.</p>
+                
+                <h3>Available Energy Calculations</h3>
+                <ul>
+                    <li>Kinetic Energy (Energy of Motion)</li>
+                    <li>Gravitational Potential Energy</li>
+                    <li>Elastic Potential Energy</li>
+                    <li>Thermal Energy</li>
+                </ul>
+
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Physics Education</h4>
+                        <p>Perfect for students learning energy concepts and calculations.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Engineering</h4>
+                        <p>Useful for basic engineering energy calculations.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Scientific Research</h4>
+                        <p>Quick energy calculations for research applications.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>What is Kinetic Energy?</h4>
+                        <p>Kinetic energy is the energy possessed by an object due to its motion. It depends on both mass and velocity (KE = ½mv²).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What is Potential Energy?</h4>
+                        <p>Potential energy is stored energy based on an object's position or condition. Gravitational potential energy (mgh) depends on height, while elastic potential energy (½kx²) depends on displacement.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How accurate are the calculations?</h4>
+                        <p>Our calculator provides results with high precision, suitable for both educational and professional use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+    
+    <script src="energy-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Unit Converter Calculator. Convert between different units of length, weight, temperature, and more. Easy and accurate unit conversions.">
+    <meta name="keywords" content="unit converter, measurement converter, metric converter, imperial converter, temperature converter, length converter">
+    <title>Unit Converter - Convert Measurements | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../Unit_Converter/unit-converter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Unit Converter</h1>
+            <p class="calculator-description">Convert between different units of measurement with precision.</p>
+
+            <div class="converter-controls">
+                <select id="categorySelect" class="category-select">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight/Mass</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="area">Area</option>
+                    <option value="volume">Volume</option>
+                    <option value="speed">Speed</option>
+                    <option value="time">Time</option>
+                    <option value="pressure">Pressure</option>
+                </select>
+
+                <div class="conversion-group">
+                    <div class="amount-input">
+                        <label>From:</label>
+                        <input type="number" id="fromValue" placeholder="Enter value">
+                        <select id="fromUnit" class="unit-select"></select>
+                    </div>
+
+                    <button id="swapUnits" class="swap-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/>
+                        </svg>
+                    </button>
+
+                    <div class="amount-input">
+                        <label>To:</label>
+                        <input type="number" id="toValue" readonly>
+                        <select id="toUnit" class="unit-select"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Universal Unit Converter</h2>
+                <p>Our Unit Converter provides accurate conversions across multiple measurement categories. Whether you need to convert lengths, weights, temperatures, or other units, this tool offers precise and instant results.</p>
+                
+                <h3>Available Conversions</h3>
+                <ul>
+                    <li>Length (meters, feet, inches, etc.)</li>
+                    <li>Weight/Mass (kg, pounds, ounces, etc.)</li>
+                    <li>Temperature (Celsius, Fahrenheit, Kelvin)</li>
+                    <li>Area (square meters, acres, etc.)</li>
+                    <li>Volume (liters, gallons, etc.)</li>
+                    <li>Speed (km/h, mph, etc.)</li>
+                    <li>Time (seconds, minutes, hours, etc.)</li>
+                    <li>Pressure (Pascal, bar, psi, etc.)</li>
+                </ul>
+
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Science & Engineering</h4>
+                        <p>Convert units for scientific calculations and engineering projects.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Everyday Conversions</h4>
+                        <p>Quick conversions for cooking, shopping, and daily tasks.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>International Usage</h4>
+                        <p>Convert between metric and imperial measurements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>How accurate are the conversions?</h4>
+                        <p>Our converter uses precise conversion factors and supports up to 8 decimal places for maximum accuracy.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Can I convert between different unit systems?</h4>
+                        <p>Yes, you can convert between metric, imperial, and other measurement systems seamlessly.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Are temperature conversions supported?</h4>
+                        <p>Yes, you can convert between Celsius, Fahrenheit, and Kelvin with automatic formula adjustments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+    
+    <script src="../Unit_Converter/unit-converter.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+</body>
+</html>

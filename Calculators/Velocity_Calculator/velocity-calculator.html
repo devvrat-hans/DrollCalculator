@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Velocity Calculator. Calculate velocity, speed, acceleration, and distance. Perfect for physics calculations and kinematics problems.">
+    <meta name="keywords" content="velocity calculator, speed calculator, physics calculator, acceleration calculator, distance calculator">
+    <title>Velocity Calculator - Physics Made Easy | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../Velocity_Calculator/velocity-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Velocity Calculator</h1>
+            <p class="calculator-description">Calculate velocity, speed, acceleration, and distance using various kinematic equations.</p>
+
+            <div class="velocity-type-selector">
+                <select id="velocityType" class="velocity-select">
+                    <option value="basic">Basic Velocity (v = d/t)</option>
+                    <option value="acceleration">Final Velocity with Acceleration (v = u + at)</option>
+                    <option value="distance">Velocity using Distance (v² = u² + 2as)</option>
+                    <option value="average">Average Velocity (v = (v₁ + v₂)/2)</option>
+                </select>
+            </div>
+
+            <div class="input-group" id="basicVelocity">
+                <div class="amount-input">
+                    <label>Distance (m)</label>
+                    <input type="number" id="distance" placeholder="Enter distance">
+                </div>
+                <div class="amount-input">
+                    <label>Time (s)</label>
+                    <input type="number" id="time" placeholder="Enter time">
+                </div>
+            </div>
+
+            <div class="input-group" id="accelerationVelocity" style="display: none;">
+                <div class="amount-input">
+                    <label>Initial Velocity (m/s)</label>
+                    <input type="number" id="initialVelocity" placeholder="Enter initial velocity">
+                </div>
+                <div class="amount-input">
+                    <label>Acceleration (m/s²)</label>
+                    <input type="number" id="acceleration" placeholder="Enter acceleration">
+                </div>
+                <div class="amount-input">
+                    <label>Time (s)</label>
+                    <input type="number" id="accTime" placeholder="Enter time">
+                </div>
+            </div>
+
+            <div class="input-group" id="distanceVelocity" style="display: none;">
+                <div class="amount-input">
+                    <label>Initial Velocity (m/s)</label>
+                    <input type="number" id="initVelocity" placeholder="Enter initial velocity">
+                </div>
+                <div class="amount-input">
+                    <label>Acceleration (m/s²)</label>
+                    <input type="number" id="distAcceleration" placeholder="Enter acceleration">
+                </div>
+                <div class="amount-input">
+                    <label>Distance (m)</label>
+                    <input type="number" id="distDistance" placeholder="Enter distance">
+                </div>
+            </div>
+
+            <div class="input-group" id="averageVelocity" style="display: none;">
+                <div class="amount-input">
+                    <label>Initial Velocity (m/s)</label>
+                    <input type="number" id="velocity1" placeholder="Enter first velocity">
+                </div>
+                <div class="amount-input">
+                    <label>Final Velocity (m/s)</label>
+                    <input type="number" id="velocity2" placeholder="Enter second velocity">
+                </div>
+            </div>
+
+            <button id="calculateVelocity" class="calculate-btn">
+                <span>Calculate Velocity</span>
+            </button>
+
+            <div class="result-container">
+                <div class="result-box">
+                    <span class="result-number" id="velocityResult">0 m/s</span>
+                    <span class="result-label">Velocity</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Physics Velocity Calculator</h2>
+                <p>Our Velocity Calculator helps you solve various kinematics problems. Whether you're studying basic motion or complex acceleration scenarios, this tool provides accurate calculations for all your physics needs.</p>
+                
+                <h3>Available Calculations</h3>
+                <ul>
+                    <li>Basic Velocity (v = d/t)</li>
+                    <li>Final Velocity with Acceleration (v = u + at)</li>
+                    <li>Velocity using Distance (v² = u² + 2as)</li>
+                    <li>Average Velocity (v = (v₁ + v₂)/2)</li>
+                </ul>
+
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Physics Education</h4>
+                        <p>Perfect for students learning kinematics and motion calculations.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Engineering</h4>
+                        <p>Useful for basic engineering motion analysis.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Scientific Research</h4>
+                        <p>Quick velocity calculations for research applications.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>What is velocity?</h4>
+                        <p>Velocity is the rate of change of position of an object with respect to time, including both speed and direction. It's measured in meters per second (m/s).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How is acceleration related to velocity?</h4>
+                        <p>Acceleration is the rate of change of velocity with respect to time. It affects how quickly an object's velocity changes.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How accurate are the calculations?</h4>
+                        <p>Our calculator provides results with high precision, suitable for both educational and professional use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+
+    <script src="../../Calculators/Velocity_Calculator/velocity-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+</body>
+</html>

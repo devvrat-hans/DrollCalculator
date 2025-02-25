@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online SIP Calculator. Calculate mutual fund returns, wealth growth, and investment planning. Best tool for systematic investment planning.">
+    <meta name="keywords" content="sip calculator, mutual fund calculator, investment calculator, monthly investment calculator, wealth calculator, compound interest">
+    <title>SIP Calculator - Plan Your Investments | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../Sip_Calculator/sip-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>SIP Calculator</h1>
+            <p class="calculator-description">Plan your investments and calculate your wealth growth through Systematic Investment Plan (SIP).</p>
+            
+            <div class="input-group">
+                <div class="amount-input">
+                    <label>Monthly Investment (₹)</label>
+                    <input type="number" id="monthlyInvestment" placeholder="Enter monthly amount">
+                </div>
+                
+                <div class="amount-input">
+                    <label>Expected Return Rate (% per annum)</label>
+                    <input type="number" id="returnRate" placeholder="Enter expected returns" step="0.1">
+                </div>
+
+                <div class="amount-input">
+                    <label>Investment Period (Years)</label>
+                    <input type="number" id="timePeriod" placeholder="Enter time period">
+                </div>
+
+                <div class="amount-input">
+                    <label>Annual Step-up (% - Optional)</label>
+                    <input type="number" id="stepUpRate" placeholder="Enter yearly increment" value="0" step="0.1">
+                </div>
+            </div>
+
+            <button id="calculateSIP" class="calculate-btn">
+                <span>Calculate Returns</span>
+            </button>
+            
+            <div class="result-container">
+                <div class="result-box">
+                    <span class="result-number" id="totalInvestment">₹0</span>
+                    <span class="result-label">Total Investment</span>
+                </div>
+                <div class="result-box">
+                    <span class="result-number" id="estimatedReturns">₹0</span>
+                    <span class="result-label">Est. Returns</span>
+                </div>
+                <div class="result-box">
+                    <span class="result-number" id="totalValue">₹0</span>
+                    <span class="result-label">Total Value</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Calculate Your SIP Returns</h2>
+                <p>Our SIP Calculator helps you plan your investments and understand the power of systematic investing. Whether you're saving for retirement, a house, or any other financial goal, this tool provides accurate calculations to make informed investment decisions.</p>
+                
+                <h3>Key Features of Our SIP Calculator</h3>
+                <ul>
+                    <li>Calculate total investment value</li>
+                    <li>See estimated returns</li>
+                    <li>Factor in yearly step-up</li>
+                    <li>Plan long-term investments</li>
+                </ul>
+        
+                <h3>Benefits of SIP</h3>
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Disciplined Investing</h4>
+                        <p>Regular monthly investments help develop a saving habit and financial discipline.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Rupee Cost Averaging</h4>
+                        <p>Benefit from market fluctuations by investing regularly over time.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Power of Compounding</h4>
+                        <p>Earn returns on your returns over long-term investments.</p>
+                    </div>
+                </div>
+        
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>What is SIP?</h4>
+                        <p>Systematic Investment Plan (SIP) is a method of investing a fixed amount regularly in mutual funds, typically monthly. It helps in building wealth over time through disciplined investing.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How does step-up SIP work?</h4>
+                        <p>Step-up SIP allows you to increase your monthly investment amount by a fixed percentage every year, helping your investments grow with your income.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Why choose SIP over lump sum?</h4>
+                        <p>SIP offers benefits like rupee cost averaging, disciplined investing, and the ability to start with smaller amounts compared to lump sum investments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+    
+    <script src="../Sip_Calculator/sip-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+</body>
+</html>

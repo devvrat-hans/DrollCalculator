@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Investment Calculator. Calculate future value, returns, and compound interest. Best tool for investment planning and wealth growth.">
+    <meta name="keywords" content="investment calculator, compound interest calculator, wealth calculator, future value calculator, financial planning calculator">
+    <title>Investment Calculator - Plan Your Wealth | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../Investment_Calculator/investment-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Investment Calculator</h1>
+            <p class="calculator-description">Calculate future value of your investments and plan your financial goals.</p>
+            
+            <div class="input-group">
+                <div class="amount-input">
+                    <label>Initial Investment (₹)</label>
+                    <input type="number" id="initialAmount" placeholder="Enter initial amount">
+                </div>
+                
+                <div class="amount-input">
+                    <label>Monthly Contribution (₹)</label>
+                    <input type="number" id="monthlyContribution" placeholder="Enter monthly amount">
+                </div>
+
+                <div class="amount-input">
+                    <label>Annual Return Rate (%)</label>
+                    <input type="number" id="returnRate" placeholder="Enter expected returns" step="0.1">
+                </div>
+
+                <div class="amount-input">
+                    <label>Investment Period (Years)</label>
+                    <input type="number" id="timePeriod" placeholder="Enter time period">
+                </div>
+            </div>
+
+            <button id="calculateInvestment" class="calculate-btn">
+                <span>Calculate Returns</span>
+            </button>
+            
+            <div class="result-container">
+                <div class="result-box">
+                    <span class="result-number" id="futureValue">₹0</span>
+                    <span class="result-label">Future Value</span>
+                </div>
+                <div class="result-box">
+                    <span class="result-number" id="totalContribution">₹0</span>
+                    <span class="result-label">Total Contribution</span>
+                </div>
+                <div class="result-box">
+                    <span class="result-number" id="totalInterest">₹0</span>
+                    <span class="result-label">Total Interest</span>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="investmentChart"></canvas>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Investment Growth Calculator</h2>
+                <p>Our Investment Calculator helps you understand how your money can grow over time through the power of compound interest. Whether you're saving for retirement, education, or any other financial goal, this tool provides valuable insights for informed decision-making.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Calculate future value of investments</li>
+                    <li>Visualize growth with interactive charts</li>
+                    <li>Account for regular contributions</li>
+                    <li>See compound interest effects</li>
+                </ul>
+        
+                <h3>Investment Strategies</h3>
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Long-term Growth</h4>
+                        <p>Plan for retirement and long-term wealth accumulation through compound interest.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Goal-based Saving</h4>
+                        <p>Calculate required investments to reach specific financial goals.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Portfolio Planning</h4>
+                        <p>Understand potential returns from different investment strategies.</p>
+                    </div>
+                </div>
+        
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>How is compound interest calculated?</h4>
+                        <p>The calculator uses the compound interest formula, considering both initial investment and regular contributions, with interest being reinvested.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What factors affect investment growth?</h4>
+                        <p>Investment growth is influenced by initial amount, regular contributions, interest rate, investment period, and frequency of compounding.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Why use an investment calculator?</h4>
+                        <p>An investment calculator helps visualize potential returns, plan saving strategies, and understand the impact of different variables on investment growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../Investment_Calculator/investment-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+</body>
+</html>

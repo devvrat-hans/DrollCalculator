@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online Loan Calculator. Calculate loan payments, interest, and amortization schedule. Best tool for loan planning and financial decisions.">
+    <meta name="keywords" content="loan calculator, debt calculator, payment calculator, interest calculator, amortization calculator">
+    <title>Loan Calculator - Plan Your Loan | DrollCalc</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/DrollCalculator.svg">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../Loan_Calculator/loan-calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section Starts-->
+    <div id="navbar-placeholder"></div>
+    <!--Navbar Section Ends-->
+
+    <main class="calculator-container">
+        <div class="calculator-card">
+            <h1>Loan Calculator</h1>
+            <p class="calculator-description">Calculate your loan payments and see the complete breakdown.</p>
+            
+            <div class="input-group">
+                <div class="amount-input">
+                    <label>Loan Amount (₹)</label>
+                    <input type="number" id="loanAmount" placeholder="Enter loan amount">
+                </div>
+                
+                <div class="amount-input">
+                    <label>Annual Interest Rate (%)</label>
+                    <input type="number" id="interestRate" placeholder="Enter interest rate" step="0.1">
+                </div>
+
+                <div class="amount-input">
+                    <label>Loan Term (Years)</label>
+                    <input type="number" id="loanTerm" placeholder="Enter loan term">
+                </div>
+
+                <div class="amount-input">
+                    <label>Additional Monthly Payment (₹)</label>
+                    <input type="number" id="extraPayment" placeholder="Optional" value="0">
+                </div>
+            </div>
+
+            <button id="calculateLoan" class="calculate-btn">
+                <span>Calculate Loan</span>
+            </button>
+            
+            <div class="result-container">
+                <div class="result-box">
+                    <span class="result-number" id="monthlyPayment">₹0</span>
+                    <span class="result-label">Monthly Payment</span>
+                </div>
+                <div class="result-box">
+                    <span class="result-number" id="totalInterest">₹0</span>
+                    <span class="result-label">Total Interest</span>
+                </div>
+                <div class="result-box">
+                    <span class="result-number" id="totalPayment">₹0</span>
+                    <span class="result-label">Total Payment</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Content Section -->
+        <div class="seo-content">
+            <div class="content-section">
+                <h2>Plan Your Loan Online</h2>
+                <p>Our Loan Calculator helps you understand the true cost of borrowing and plan your finances effectively. Calculate monthly payments, total interest, and see how extra payments can affect your loan term.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Calculate monthly loan payments</li>
+                    <li>See total interest and payment amounts</li>
+                    <li>Factor in additional monthly payments</li>
+                    <li>Understand loan amortization</li>
+                </ul>
+        
+                <h3>Common Uses</h3>
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>Personal Loans</h4>
+                        <p>Plan personal loan payments and understand total costs.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Debt Analysis</h4>
+                        <p>Analyze different loan scenarios and payment strategies.</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>Early Payoff</h4>
+                        <p>See how extra payments can reduce your loan term and interest.</p>
+                    </div>
+                </div>
+        
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>How are loan payments calculated?</h4>
+                        <p>Monthly payments are calculated using the loan amount, interest rate, and term length, considering compound interest over the loan period.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How do extra payments affect my loan?</h4>
+                        <p>Additional monthly payments reduce your principal faster, leading to less total interest paid and a shorter loan term.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Section Starts-->
+    <div id="footer-placeholder"></div>
+    <!--Footer Section Ends-->
+
+    <script src="../Loan_Calculator/loan-calculator.js"></script>
+    <script src="../../JS/template-loader.js"></script>
+    
+</body>
+</html>
